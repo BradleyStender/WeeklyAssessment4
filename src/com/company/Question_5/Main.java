@@ -1,6 +1,9 @@
 package com.company.Question_5;
 
+import java.util.Scanner;
+
 public class Main {
+    Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
          /*
@@ -13,4 +16,28 @@ public class Main {
 
     }
 
+    protected void Statement() {
+
+
+
+        System.out.println("What is your favorite flavor od ice cream out of these 4?\nChocolate \nVanilla \nStrawberry \nCookie dough");
+
+        switch (input.nextLine()) {
+            case "Chocolate":
+                System.out.println("Yeah it's pretty good.");
+                break;
+            case "vanilla":
+                System.out.println("YUMMY!!");
+                break;
+            case "Strawberry":
+                System.out.println("It's good, nut last on this list.");
+                break;
+            case "Cookie dough":
+                System.out.println("This flavor is like heaven, it is my favorite.");
+                break;
+            default:
+                System.out.println("You have not selected an option that is valid.\n please try again.");
+                Statement();
+        }
+    }
 }

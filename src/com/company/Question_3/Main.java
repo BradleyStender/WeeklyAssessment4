@@ -27,5 +27,11 @@ public class Main {
         carsList.add(new Car("Tesla", "Model 3", "Grey"));
     }
 
+    protected Main(){
+
+
+       System.out.println(carsList.containsAll(null));
+
+    }
 
 }

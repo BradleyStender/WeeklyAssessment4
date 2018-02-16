@@ -25,7 +25,7 @@ public class Menu {
                     input.nextLine();
                     Game game = new Game(input.nextLine());
                     System.out.println("You have added " + game.getTitle() + " to your library, this game can now be checked out.");
-                    library.addGame(game);
+                 //   library.addGame(game);
                     break;
                 case 2:
                     //Remove game
@@ -34,11 +34,11 @@ public class Menu {
                             "Here is a list of games, type the number of the one you would like to remove.");
                     //Create method to list all game available in the library that can be removed
                     library.listGames();
-                    library.removeGame(input.nextInt());
+             //       library.removeGame(input.nextInt());
                     break;
                 case 3:
                     //View Library
-                    library.listGames();
+             //       library.listGames();
                     break;
                 case 4:
                     //Exit program
